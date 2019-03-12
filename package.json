@@ -4,9 +4,10 @@
   "description": "An app to help you choose your beer",
   "main": "./public/main.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest src",
     "dev": "nodemon src/index.js",
-    "start": "node src/server.js"
+    "start": "node src/index.js",
+    "coverage": "jest --collectCoverageFrom=src/**.js --collectCoverageFrom=!src/index.js --coverage src"
   },
   "repository": {
     "type": "git",
