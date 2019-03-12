@@ -1,12 +1,9 @@
+/* eslint-disable-no-console */
 const express = require("express");
-const app = express();
 const path = require("path");
-const favicon = require("serve-favicon");
+
+const app = express();
 
 app.use(express.static(path.join(__dirname, "..", "public")));
-
-app.get("/", (req, res) => {
-  res.send(public / index.html);
-});
 
 module.exports = app;

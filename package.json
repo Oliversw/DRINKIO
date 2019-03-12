@@ -4,8 +4,8 @@
   "description": "An app to help you choose your beer",
   "main": "./public/main.js",
   "scripts": {
-    "test": "jest",
-    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "dev": "nodemon src/index.js",
     "start": "node src/server.js"
   },
   "repository": {
@@ -25,7 +25,8 @@
     "eslint-plugin-jest": "^22.3.0",
     "jest": "^24.3.1",
     "nodemon": "^1.18.6",
-    "query-string": "^6.2.0"
+    "query-string": "^6.2.0",
+    "supertest": "^4.0.0"
   },
   "dependencies": {
     "express": "^4.16.4",
