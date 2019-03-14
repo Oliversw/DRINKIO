@@ -15,8 +15,16 @@
 })();
 
 const postSearch = typedInput => {
-  console.log("Beginning fetch");
-  fetch("/search", { method: "POST", body: typedInput })
+  console.log("Beginning fetch, sending ", JSON.stringify(typedInput));
+  fetch("/query", {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    method: "POST",
+    body: JSON.stringify({ query: typedInput })
+  })
+    .then(res => res.json())
     .then(res => console.log(res))
     .catch(err => console.log(err));
 };
