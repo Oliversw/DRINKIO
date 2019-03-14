@@ -4,6 +4,7 @@ module.exports = {
   extends: ["airbnb-base", "plugin:jest/recommended", "eslint:recommended"],
   plugins: ["import", "jest"],
   env: {
+    browser: true,
     node: true,
     "jest/globals": true,
     es6: true
@@ -16,5 +17,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  rules: {}
+  rules: {
+    "no-console": "off"
+  }
 };
