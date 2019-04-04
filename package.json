@@ -31,7 +31,9 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "env2": "^2.2.2",
     "express": "^4.16.4",
+    "request": "^2.88.0",
     "serve-favicon": "^2.5.0"
   }
 }

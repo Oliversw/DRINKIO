@@ -28,5 +28,3 @@ const postSearch = typedInput => {
     .then(res => console.log(res))
     .catch(err => console.log(err));
 };
-
-//https://sandbox-api.brewerydb.com/v2/search?q=Sun%20Dog&type=beer&key=e87927017c7d0b6821a4ca409ce2e3e8
